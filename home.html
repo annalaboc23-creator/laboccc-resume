@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="{% static 'resume/style.css' %}">
+</head>
+
+<body>
+    <main class="container">
+        <section class="profile">
+            <img src="{% static 'resume/profile.jpg' %}" class="avatar" alt="Profile">
+            <h1>Laboc, Ana</h1>
+            <p>Student Web Developer | Designer </p>
+
+            <div class="contact">
+                <p>Email: analaboc88@gmail.com</p>
+                <p>Phone: 09621-929-501</p>
+                <p>Location: Marilao Bulacan</p>
+                <a href="{% static 'resume/resume.pdf' %}" download>Download Resume</a>
+            </div>
+        </section>
+
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>
+            I'm dedicated to learn those languages in programming had, I also love to do it while i'm learning it and cope up those lessons that could help me in the future for my upcoming job.
+            </p>
+        </section>
+
+        <section class="experience">
+            <h2> My Experience</h2>
+
+            <div class="job">
+                <h3>Frontend Developer — Company A</h3>
+                <p><strong>2022 – Present</strong></p>
+                <ul>
+                    <li>Developed UI components for dashboards and some simple webs.</li>
+                    <li>Improved load speed by 30%.</li>
+                </ul>
+            </div>
+
+
+        <section class="education">
+            <h2>Education</h2>
+            <p>Bachelor of Science in Information Technology</p>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Portfolio Website</strong> – Personal portfolio built with Django.</li>
+                <li><strong>Task Manager App</strong> – CRUD app for managing tasks.</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
