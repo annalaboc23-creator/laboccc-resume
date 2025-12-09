@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ana Laboc — Resume</title>
+  <meta name="description" content="Resume / portfolio of Ana Laboc, I.T student" />
+
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --radius:12px;
+      --maxw:800px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef2ff 60%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+      color:#111827;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 10px 30px rgba(15,23,42,0.08);
+      padding:28px;
+      display:grid;
+      grid-template-columns: 220px 1fr;
+      gap:22px;
+    }
+
+    /* left column */
+    .photo{
+      width:160px;
+      height:160px;
+      border-radius:999px;
+      background:linear-gradient(135deg,#e6f0ff,#f0f7ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:var(--accent);
+      font-size:28px;
+      margin:0 auto 12px;
+      box-shadow:0 6px 18px rgba(37,99,235,0.08);
+    }
+    .left{ text-align:center; padding-top:6px; }
+    .name{ font-size:20px; font-weight:700; margin:6px 0; }
+    .role{ font-size:13px; color:var(--muted); margin-bottom:12px; }
+    .contact, .skills{
+      text-align:left;
+      margin-top:10px;
+      font-size:14px;
+    }
+    .skills .tag{
+      display:inline-block;
+      margin:6px 6px 0 0;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid #e6e9ef;
+      background:#fff;
+      font-size:13px;
+      color:#0f172a;
+    }
+    .btns{ margin-top:16px; display:flex; gap:8px; justify-content:center; }
+
+    .btn{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:8px;
+      font-size:13px;
+      text-decoration:none;
+    }
+    .btn-primary{ background:var(--accent); color:white; }
+    .btn-ghost{ border:1px solid #e6e9ef; color:#111827; background:white; }
+
+    /* right column */
+    .section { margin-bottom:18px; }
+    h2{ margin:0 0 8px 0; font-size:16px; font-weight:700; color:#0f172a; }
+    p.lead{ color:var(--muted); margin:0; font-size:14px; line-height:1.5; }
+
+    .card{ padding:12px; border-radius:10px; border:1px solid #eef2ff; background:#fff; }
+    .job{ margin-bottom:10px; }
+    .job h4{ margin:0; font-size:14px; font-weight:600; }
+    .job .meta{ font-size:12px; color:var(--muted); margin-top:4px; }
+
+    ul { margin:8px 0 0 18px; color:#111827; }
+    footer { font-size:13px; color:var(--muted); margin-top:8px; }
+
+    @media (max-width:800px){
+      .container{ grid-template-columns: 1fr; padding:18px; }
+      .left{ order:2; text-align:left; }
+      .photo{ margin:0 0 12px 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <aside class="left">
+      <div class="photo" aria-hidden="true">AL</div>
+      <div class="name">Ana Laboc</div>
+      <div class="role">Student — Information Technology</div>
+
+      <div class="contact">
+        <strong>Contact</strong>
+        <div style="font-size:13px;color:var(--muted);margin-top:6px;">
+          Email: <a href="mailto:ana@example.com">ana@example.com</a><br />
+          Location: Philippines (example)
+        </div>
+      </div>
+
+      <div class="skills" aria-label="skills">
+        <strong>Skills</strong>
+        <div style="margin-top:6px;">
+          <span class="tag">Python</span>
+          <span class="tag">HTML</span>
+          <span class="tag">Java</span>
+        </div>
+      </div>
+
+      <div class="btns">
+        <a href="/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </div>
+    </aside>
+
+    <section class="right">
+      <header class="section">
+        <h2>About Me</h2>
+        <p class="lead">I am a student of Information Technology who is continuing to learn. I'm dedicated, curious, and always trying to cope up with new skills. I enjoy programming and building useful small projects while improving my foundations.</p>
+      </header>
+
+      <div class="section card">
+        <h2>Education</h2>
+        <div style="margin-top:8px;">
+          <strong>Bachelor of Science — Information Technology</strong>
+          <div class="meta" style="margin-top:4px;">Currently studying / Student</div>
+        </div>
+      </div>
+
+      <div class="section card">
+        <h2>Experience (student projects)</h2>
+
+        <div class="job">
+          <h4>Personal projects</h4>
+          <div class="meta">Small exercises and practice projects</div>
+          <ul>
+            <li>Practice Python scripts for beginners (file handling, small CLI tools)</li>
+            <li>Built static web pages using HTML and CSS</li>
+            <li>Learning Java basics: OOP and small programs</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>More about me</h2>
+        <p class="lead">As a student, I am committed to learning every day. I manage my time between coursework and hands-on practice. I welcome mentorship and enjoy collaborating on beginner-friendly projects.</p>
+      </div>
+
+      <footer id="contact">
+        <strong>Open to learning & collaboration</strong><br />
+        Email: <a href="mailto:ana@example.com">ana@example.com</a>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
